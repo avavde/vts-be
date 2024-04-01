@@ -1,0 +1,30 @@
+GET /tags - Получить теги.
+POST /tags - Добавить тег.
+GET /tags/{ID or MAC} - Получить информацию о теге по его ID или MAC-адресу.
+PUT /tags/{ID or MAC} - Обновить информацию о теге по его ID или MAC-адресу.
+DELETE /tags/{ID or MAC} - Удалить тег по его ID или MAC-адресу.
+GET /tags/{ID or MAC}/datastreams/{datastreams_id} - Получить поток данных для указанного тега.
+DELETE /tags/{ID or MAC}/datastreams/{datastreams_id} - Удалить поток данных для указанного тега.
+GET /anchors - Получить якори.
+POST /anchors - Добавить якорь.
+PUT /anchors/:id - Обновить информацию о якоре по его ID.
+GET /buildings - Получить список зданий.
+POST /buildings - Добавить здание.
+GET /buildings/{id} - Получить информацию о здании по его ID.
+PUT /buildings/{id} - Обновить информацию о здании по его ID.
+DELETE /buildings/{id} - Удалить здание по его ID.
+GET /buildings/{id}/plans - Получить все планы для указанного здания.
+POST /buildings/{id}/plans - Создать новый план для указанного здания.
+PUT /buildings/{id}/plans/{plan_name} - Обновить информацию о плане для указанного здания.
+DELETE /buildings/{id}/plans/{plan_name} - Удалить существующий план для указанного здания.
+GET /feeds/{ID or MAC}/datastreams/{datastreams_id} - Получить конкретный поток данных для указанного идентификатора или MAC-адреса.
+DELETE /feeds/{ID or MAC}/datastreams/{datastreams_id} - Удалить поток данных для указанного идентификатора или MAC-адреса.
+GET /tagzones/status - Получить текущий статус встреч тегов.
+GET /tagzones/control - Получить спецификацию зон тегов.
+POST /tagzones/control - Создать новую зону тегов.
+PUT /tagzones/control/{id} - Обновить существующую зону тегов.
+DELETE /tagzones/control/{id} - Удалить существующую зону тегов.
+GET /buildings/{id}/plans/{plan_name}/zones - Получить зоны для указанного плана в здании.
+POST /buildings/{id}/plans/{plan_name}/zones - Создать новую зону для указанного плана в здании.
+PUT /zones/{zone_id} - Обновить зону по её ID.
+DELETE /zones/{zone_id} - Удалить зону по её ID.
